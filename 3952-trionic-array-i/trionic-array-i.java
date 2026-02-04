@@ -3,8 +3,10 @@ class Solution {
         
         int p = 0;
         int q = 0;
+        
         int n= nums.length;
         if(n<=3) return false;
+
         int count1 = 0;
         int count2 = 0 ;
 
