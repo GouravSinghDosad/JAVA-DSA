@@ -1,15 +1,16 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         
-        strs = str(x)
-        first = 0
-        last = len(strs)-1
-        while(first < last):
-            if(strs[first] != strs[last]):
+        newString = str(x)
+        j = len(newString)-1
+        i = 0
+
+
+        while(i < j):
+            if newString[i] != newString[j]:
                 return False
             
-            first = first+1
-            last = last-1
+            i = i+1
+            j -= 1
 
-        
         return True
